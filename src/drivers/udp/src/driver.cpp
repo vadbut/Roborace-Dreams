@@ -357,7 +357,9 @@ void TDriver::setControls(int index)
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.x,  sizeof(float));//96
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.y,  sizeof(float));//100
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.z,  sizeof(float));//104
-	SendBuf.append( (const char*) &oCar[index]->_steerCmd,  sizeof(float));//108
+	float ang_now = (oCar[index]->_steerCmd*180 / 3.14159) * oCar[car_indxs[index]]->info.steerLock;
+	SendBuf.append( (const char*) &ang_now,  sizeof(float));//108
+	//SendBuf.append( (const char*) &oCar[index]->_steerCmd,  sizeof(float));//108
 	SendBuf.append( (const char*) &oCar[index]->priv.reaction[0],  sizeof(float));//112
 	SendBuf.append( (const char*) &oCar[index]->priv.reaction[1],  sizeof(float));//116
 	SendBuf.append( (const char*) &oCar[index]->priv.reaction[2],  sizeof(float));//120
@@ -492,7 +494,7 @@ void TDriver::setControls(int index)
         oCar[index]->_brakeCmd = udpCmd[index].brakeCmd;
         oCar[index]->_gearCmd  = udpCmd[index].gearCmd;      
         oCar[index]->_clutchCmd = 0;
-
+        //GfOut("ang: %f, gas: %f brake: %f\n",ang, udpCmd[index].gasCmd, udpCmd[index].brakeCmd);
   oCar[index]->_lightCmd = RM_LIGHT_HEAD1 | RM_LIGHT_HEAD2;
 }
 
