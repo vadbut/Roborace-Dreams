@@ -357,7 +357,7 @@ void TDriver::setControls(int index)
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.x,  sizeof(float));//96
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.y,  sizeof(float));//100
 	SendBuf.append( (const char*) &oCar[index]->pub.DynGC.acc.z,  sizeof(float));//104
-	float ang_now = (oCar[index]->_steerCmd*180 / 3.14159) * oCar[car_indxs[index]]->info.steerLock;
+	float ang_now = (oCar[index]->_steerCmd*180 / 3.14159) * oCar[index]->info.steerLock;
 	SendBuf.append( (const char*) &ang_now,  sizeof(float));//108
 	//SendBuf.append( (const char*) &oCar[index]->_steerCmd,  sizeof(float));//108
 	SendBuf.append( (const char*) &oCar[index]->priv.reaction[0],  sizeof(float));//112
@@ -484,7 +484,7 @@ void TDriver::setControls(int index)
 			}
 		}
 		// steer_ang: receive in deg -> convert to rads -> [-1,1]
-		float ang = (udpCmd[index].steeringCmd/180 * 3.14159) / oCar[car_indxs[index]]->info.steerLock;
+		float ang = (udpCmd[index].steeringCmd/180 * 3.14159) / oCar[index]->info.steerLock;
 		if (ang > 1){
 			ang = 1;
 		}else if (ang < -1){
