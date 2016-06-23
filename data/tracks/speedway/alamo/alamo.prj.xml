@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_51" class="java.beans.XMLDecoder">
+ <object class="utils.Properties" id="Properties0">
+  <void property="author">
+   <string>Xavier Bertaux</string>
+  </void>
+  <void property="category">
+   <string>oval</string>
+  </void>
+  <void property="currentA">
+   <double>6.283185307179588</double>
+  </void>
+  <void property="currentX">
+   <double>0.44616289214981464</double>
+  </void>
+  <void property="currentY">
+   <double>0.11206033288804752</double>
+  </void>
+  <void property="curveNameCount">
+   <int>18</int>
+  </void>
+  <void property="description">
+   <string>D shape long speedway</string>
+  </void>
+  <void property="image">
+   <string>G:\Jeux Libres\torcs\tracks\oval\texas\track outline.png</string>
+  </void>
+  <void property="imageScale">
+   <double>1.3</double>
+  </void>
+  <void property="imgOffset">
+   <void property="x">
+    <double>-504.0</double>
+   </void>
+   <void property="y">
+    <double>619.0</double>
+   </void>
+  </void>
+  <void property="path">
+   <string>G:\Jeux Libres\torcs\tracks\oval\texas</string>
+  </void>
+  <void property="pitEnd">
+   <string>pit end</string>
+  </void>
+  <void property="pitEntry">
+   <string>pit entry</string>
+  </void>
+  <void property="pitExit">
+   <string>pit exit</string>
+  </void>
+  <void property="pitLength">
+   <double>10.0</double>
+  </void>
+  <void property="pitSide">
+   <string>left</string>
+  </void>
+  <void property="pitStart">
+   <string>pit start</string>
+  </void>
+  <void property="pitWidth">
+   <double>5.0</double>
+  </void>
+  <void property="straightNameCount">
+   <int>19</int>
+  </void>
+  <void property="trackName">
+   <string>texas</string>
+  </void>
+  <void property="trackWidth">
+   <double>20.0</double>
+  </void>
+ </object>
+</java>

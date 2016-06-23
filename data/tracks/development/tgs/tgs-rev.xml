@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    file                 : tgs-rev.xml
+    generated            : Fri, 07 Nov 2014 05:25:32 GMT
+    copyright            : (C) 2014 Joe Thompson
+    email                : None
+    version              : 1
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!-- $Id$ -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd" [
+<!-- general definitions for tracks -->
+<!ENTITY default-surfaces SYSTEM "../../../data/tracks/surfaces.xml">
+<!ENTITY default-objects SYSTEM "../../../data/tracks/objects.xml">
+]>
+<params name="tgs" type="trackdef" mode="mw">
+    <section name="Header">
+        <attstr name="name" val="Tejas Global Speedway" />
+        <attnum name="sky version" val="1" />
+        <attstr name="category" val="development" />
+        <attnum name="version" val="5" />
+        <attstr name="author" val="Joe Thompson" />
+        <attstr name="description" val="development track" />
+    </section>
+    <section name="Local Info">
+        <attstr name="station" val="KCLL"/>
+        <attnum name="overall rain likelyhood" unit="%" val="30"/>
+        <attnum name="little rain likelyhood" unit="%" val="55"/>
+        <attnum name="medium rain likelyhood" unit="%" val="25"/>
+        <attnum name="time of day" unit="hour" val="13.0"/>
+        <attnum name="sun ascension" unit="deg" val="160"/>
+    </section>
+    <section name="Graphic">
+        <attstr name="3d description" val="tgs.ac" />
+        <attstr name="background image" val="background.png" />
+        <attnum name="background type" val="4" />
+        <section name="Terrain Generation">
+            <attnum name="track step" unit="m" val="10" />
+            <attnum name="border margin" unit="m" val="50" />
+            <attnum name="border step" unit="m" val="30" />
+            <attnum name="border height" unit="m" val="4.1" />
+            <attstr name="orientation" val="counter-clockwise" />
+            <attstr name="surface" val="dirt" />
+        </section>
+    </section>
+    <section name="Main Track">
+        <attnum name="width" unit="m" val="12.5" />
+        <attnum name="profil steps length" unit="m" val="4" />
+        <attstr name="surface" val="asphalt2-lines" />
+        <attnum name="original bearing" unit="deg" val="180.0" />
+<!--    Add main default sides here  -->
+         
+<!--    Add pits here  -->
+
+       <section name="Track Segments">
+          <!--******************************-->
+          <!--          Segment 5         -->
+          <!--******************************-->
+          <section name="s5">
+             <attstr name="type" val="str" />
+             <attnum name="lg" unit="m" val="100.0" />
+          </section>
+          <!--******************************-->
+          <!--          Segment 4         -->
+          <!--******************************-->
+          <section name="s4">
+             <attstr name="type" val="rgt" />
+             <attnum name="arc" unit="deg" val="180.0" />
+             <attnum name="radius" unit="m" val="50.0" />
+          </section>
+          <!--******************************-->
+          <!--          Segment 3         -->
+          <!--******************************-->
+          <section name="s3">
+             <attstr name="type" val="str" />
+             <attnum name="lg" unit="m" val="400.0" />
+          </section>
+          <!--******************************-->
+          <!--          Segment 2         -->
+          <!--******************************-->
+          <section name="s2">
+             <attstr name="type" val="rgt" />
+             <attnum name="arc" unit="deg" val="180.0" />
+             <attnum name="radius" unit="m" val="50.0" />
+          </section>
+          <!--******************************-->
+          <!--          Segment 1         -->
+          <!--******************************-->
+          <section name="s1">
+             <attstr name="type" val="str" />
+             <attnum name="lg" unit="m" val="300.0" />
+          </section>
+       </section>
+    </section>
+<!-- 
+    <section name="Cameras">
+    </section>
+-->
+    <section name="Objects">
+        &default-objects;
+    </section>
+    <section name="Surfaces">
+        &default-surfaces;
+    </section>
+</params>

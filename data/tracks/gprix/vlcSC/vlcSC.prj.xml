@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_06" class="java.beans.XMLDecoder"> 
+ <object class="utils.Properties"> 
+  <void property="author"> 
+   <string>APR-Torcs</string> 
+  </void> 
+  <void property="category"> 
+   <string>gp2009</string> 
+  </void> 
+  <void property="currentA"> 
+   <double>-6.284930636431602</double> 
+  </void> 
+  <void property="currentX"> 
+   <double>-0.12141619312782836</double> 
+  </void> 
+  <void property="currentY"> 
+   <double>-0.03679632323787335</double> 
+  </void> 
+  <void property="curveNameCount"> 
+   <int>43</int> 
+  </void> 
+  <void property="description"> 
+   <string>Circuito Urbano de Valencia</string> 
+  </void> 
+  <void property="path"> 
+   <string>/usr/local/share/games/torcs/tracks/gp2009/vlcSC</string> 
+  </void> 
+  <void property="pitEnd"> 
+   <string>finalpit</string> 
+  </void> 
+  <void property="pitEntry"> 
+   <string>entradapit</string> 
+  </void> 
+  <void property="pitExit"> 
+   <string>salidapit</string> 
+  </void> 
+  <void property="pitLength"> 
+   <double>20.0</double> 
+  </void> 
+  <void property="pitStart"> 
+   <string>principiopit</string> 
+  </void> 
+  <void property="pitWidth"> 
+   <double>7.0</double> 
+  </void> 
+  <void property="straightNameCount"> 
+   <int>30</int> 
+  </void> 
+  <void property="trackName"> 
+   <string>vlcSC</string> 
+  </void> 
+  <void property="trackWidth"> 
+   <double>14.0</double> 
+  </void> 
+ </object> 
+</java> 

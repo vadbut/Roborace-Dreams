@@ -1,0 +1,37 @@
+v0.4
+    - changed tirewall textures (green/white)
+    - added pit asphalt textures
+    - added start/finish lane texture
+    - added cameras
+    - added concrete barriers
+    - added pit walls
+    - added fences
+    - added turnmarks
+    - added race-selection picture
+    - eased bump after T11
+
+v0.3
+    - increased friction
+    - added pit lane wall
+    - changed tirewalls' width to 1m
+    - lowered bordering hills    
+    - asphalt texture
+    - changed textures on sides (brown, autumn grass, lighter sand)
+    - more banking in T6
+    - fixed missing curb in T10B
+    - custom curbs (green/white)
+    
+v0.2
+    - fixed side width error
+    - added pits
+    - changed curb heights according to Trackpedia
+    - added bankings
+    - eased bump after T9
+
+v0.1
+    - initial release
+    - correct height
+    - correct side widths
+    - correct curb placement
+    - correct barrier placement
+    - correct length
