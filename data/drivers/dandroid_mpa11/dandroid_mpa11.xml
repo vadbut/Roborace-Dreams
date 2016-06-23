@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../libs/tgf/params.dtd">
+
+<params name="dandroid_mpa11" type="robotdef">
+  <section name="Robots">
+    <section name="index">
+
+      <section name="0">
+        <attstr name="name" val="Bernhard Schweizer"></attstr>
+        <attstr name="short name" val="B. Schweizer"></attstr>
+        <attstr name="code name" val="SCH"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-mpa11-mur"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="mpa11-murasama"></attstr>
+        <attnum name="race number" val="7"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.9"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="1">
+        <attstr name="name" val="Joe Barber"></attstr>
+        <attstr name="short name" val="J. Barber"></attstr>
+        <attstr name="code name" val="BAR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-mpa11-mur"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="mpa11-murasama"></attstr>
+        <attnum name="race number" val="8"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.9"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+    </section>
+  </section>
+</params>

@@ -1,0 +1,11 @@
+INCLUDE(../../../cmake/macros.cmake)
+
+SET(ROBOT_NAME "K1999")
+
+SET(ROBOT_FILES logo.rgb)
+SET(ROBOT_SUBDIRS 1 2)
+
+ROBOT_DATA(NAME ${ROBOT_NAME} 
+           FILES ${ROBOT_FILES} 
+           SUBDIRS ${ROBOT_SUBDIRS})
+

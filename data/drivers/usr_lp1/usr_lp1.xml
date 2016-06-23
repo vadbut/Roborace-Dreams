@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file                 : usr.xml
+    created              : Wed Jan 8 18:31:16 CET 2003
+    copyright            : (C) 2002 Andrew Sumner
+    email                : firechief@bluewin.ch
+    version              : $Id: usr_trb1.xml 3256 2011-01-09 23:49:36Z kmetykog $
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../libs/tgf/params.dtd">
+
+<params name="usr_trb1" type="robotdef">
+  <section name="Robots">
+    <section name="index">
+	  <section name="1">
+        <attstr name="name" val="Ryou Sasaki"></attstr>
+        <attstr name="short name" val="R. Sasaki"></attstr>
+        <attstr name="code name" val="SAS"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="P-Cure Motorsport"></attstr>
+        <attstr name="author" val="Andrew Sumner"></attstr>
+        <attstr name="car name" val="lp1-vieringe-vr8"></attstr>
+        <attnum name="race number" val="21"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.7"></attnum>
+        <attnum name="blue" val="0.2"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+	  <section name="2">
+        <attstr name="name" val="Andy Starr"></attstr>
+        <attstr name="short name" val="A. Starr"></attstr>
+        <attstr name="code name" val="STR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="P-Cure Motorsport"></attstr>
+        <attstr name="author" val="Andrew Sumner"></attstr>
+        <attstr name="car name" val="lp1-vieringe-vr8"></attstr>
+        <attnum name="race number" val="22"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.7"></attnum>
+        <attnum name="blue" val="0.2"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+	  <section name="3">
+        <attstr name="name" val="Sanae Kanzaki"></attstr>
+        <attstr name="short name" val="S. Kanzaki"></attstr>
+        <attstr name="code name" val="KAN"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="Kochiya-Pescy Sport"></attstr>
+        <attstr name="author" val="Andrew Sumner"></attstr>
+        <attstr name="car name" val="lp1-pescy-p60"></attstr>
+        <attnum name="race number" val="15"></attnum>
+        <attnum name="red" val="0.2"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.2"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+	  <section name="4">
+        <attstr name="name" val="Giuseppe Esposito"></attstr>
+        <attstr name="short name" val="G. Esposito"></attstr>
+        <attstr name="code name" val="GES"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="Kochiya-Pescy Sport"></attstr>
+        <attstr name="author" val="Andrew Sumner"></attstr>
+        <attstr name="car name" val="lp1-pescy-p60"></attstr>
+        <attnum name="race number" val="16"></attnum>
+        <attnum name="red" val="0.2"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.2"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+    </section>
+  </section>
+</params>

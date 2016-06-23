@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+        kilo2008.xml
+
+        Copyright 2009 kilo aka Gabor Kmetyko <kg.kilo@gmail.com>
+        Based on work by Bernhard Wymann and Andrew Sumner.
+        Copyright: (C) 2002 Andrew Sumner (firechief@bluewin.ch)
+
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+
+        $Id$
+
+-->
+
+<!DOCTYPE params SYSTEM "../../libs/tgf/params.dtd">
+
+<params name="kilo2008" type="robotdef">
+  <section name="Robots">
+    <section name="index">
+
+      <section name="1">
+        <attstr name="name" val="Kilo 1"></attstr>
+        <attstr name="short name" val="Kilo 1"></attstr>
+        <attstr name="code name" val="KG1"></attstr>
+        <attstr name="desc" val="The Highlander"></attstr>
+        <attstr name="team" val="Team Alba 2008"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="trb1-cavallo-360rb"></attstr>
+        <attnum name="race number" val="71"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="2">
+        <attstr name="name" val="Kilo 2"></attstr>
+        <attstr name="short name" val="Kilo 2"></attstr>
+        <attstr name="code name" val="KG2"></attstr>
+        <attstr name="desc" val="The Islander"></attstr>
+        <attstr name="team" val="Team Alba 2008"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="trb1-cavallo-360rb"></attstr>
+        <attnum name="race number" val="72"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="3">
+        <attstr name="name" val="Pete K"></attstr>
+        <attstr name="short name" val="Pete K"></attstr>
+        <attstr name="code name" val="PET"></attstr>
+        <attstr name="desc" val="Pete"></attstr>
+        <attstr name="team" val="Team Alba 2008"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="trb1-taipan-rb1"></attstr>
+        <attnum name="race number" val="73"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="4">
+        <attstr name="name" val="Moira K"></attstr>
+        <attstr name="short name" val="Moira K"></attstr>
+        <attstr name="code name" val="MOI"></attstr>
+        <attstr name="desc" val="Moira"></attstr>
+        <attstr name="team" val="Team Alba 2008"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="trb1-taipan-rb1"></attstr>
+        <attnum name="race number" val="74"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+
+
+      <!-- LS-GT1 drivers -->
+      <section name="5">
+        <attstr name="name" val="Davide 'Aculeo' Secchi"></attstr>
+        <attstr name="short name" val="D. Secchi"></attstr>
+        <attstr name="code name" val="SEC"></attstr>
+        <attstr name="desc" val="The Sting of Sicily"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="75"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="6">
+        <attstr name="name" val="Kirsten Nygaard-Iversen"></attstr>
+        <attstr name="short name" val="K. Nygaard"></attstr>
+        <attstr name="code name" val="NYG"></attstr>
+        <attstr name="desc" val="The cool breeze from Denmark who curses in Italian"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="76"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+<!--
+
+      <section name="7">
+        <attstr name="name" val="Darius Krol"></attstr>
+        <attstr name="short name" val="D. Krol"></attstr>
+        <attstr name="code name" val="KRO"></attstr>
+        <attstr name="desc" val="The new rising star of Poland"></attstr>
+        <attstr name="team" val="Team Polar Sand"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-cavallo-570s1"></attstr>
+        <attnum name="race number" val="54"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="8">
+        <attstr name="name" val="Tomas Kosta"></attstr>
+        <attstr name="short name" val="T. Kosta"></attstr>
+        <attstr name="code name" val="KOS"></attstr>
+        <attstr name="desc" val="The Czech tech guru"></attstr>
+        <attstr name="team" val="Team Polar Sand"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-cavallo-570s1"></attstr>
+        <attnum name="race number" val="53"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+-->
+
+      <section name="7">
+        <attstr name="name" val="Anders Nikolsen"></attstr>
+        <attstr name="short name" val="A. Nikolsen"></attstr>
+        <attstr name="code name" val="NIK"></attstr>
+        <attstr name="desc" val="Leaving 6 years of rally racing behind, this Norwegian guy will not ever fear drifting a bit..."></attstr>
+        <attstr name="team" val="La-Vette Motorsports"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-vulture-v6r"></attstr>
+        <attnum name="race number" val="79"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="8">
+        <attstr name="name" val="Alberto Gonzalez"></attstr>
+        <attstr name="short name" val="A. Gonzalez"></attstr>
+        <attstr name="code name" val="GON"></attstr>
+        <attstr name="desc" val="Team owner veteran Uruguayan pro who've spent 20 years in South American car racing - knows all the tips and tricks of car racing."></attstr>
+        <attstr name="team" val="La-Vette Motorsports"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-vulture-v6r"></attstr>
+        <attnum name="race number" val="80"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+
+
+      <!-- WIP
+      <section name="11">
+        <attstr name="name" val="Hwang Su Bak"></attstr>
+        <attstr name="short name" val="H. Su Bak"></attstr>
+        <attstr name="code name" val="BAK"></attstr>
+        <attstr name="desc" val="South Korean"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="76"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="12">
+        <attstr name="name" val="Lella del Monte"></attstr>
+        <attstr name="short name" val="L. Monte"></attstr>
+        <attstr name="code name" val="MON"></attstr>
+        <attstr name="desc" val="Italian"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="76"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+
+
+      <section name="13">
+        <attstr name="name" val="Karline Sereykaite"></attstr>
+        <attstr name="short name" val="K. Serey"></attstr>
+        <attstr name="code name" val="SER"></attstr>
+        <attstr name="desc" val="Latvian"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="76"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="14">
+        <attstr name="name" val="Calum Stoddart"></attstr>
+        <attstr name="short name" val="C. Stoddart"></attstr>
+        <attstr name="code name" val="STO"></attstr>
+        <attstr name="desc" val="Scot"></attstr>
+        <attstr name="team" val="Scuderia Archi Radianti"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="ls1-archer-r9"></attstr>
+        <attnum name="race number" val="76"></attnum>
+        <attnum name="red" val="0.9"></attnum>
+        <attnum name="green" val="0.9"></attnum>
+        <attnum name="blue" val="0.1"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+      -->
+
+      <section name="9">
+        <attstr name="name" val="Gilang Yudha"></attstr>
+        <attstr name="short name" val="G. Yudha"></attstr>
+        <attstr name="code name" val="YUD"></attstr>
+        <attstr name="desc" val="Indonesia"></attstr>
+        <attstr name="team" val="Team Alba 2011"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="mpa1-hartbill-2002"></attstr>
+        <attnum name="race number" val="17"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+      <section name="10">
+        <attstr name="name" val="Dona Maria"></attstr>
+        <attstr name="short name" val="D. Maria"></attstr>
+        <attstr name="code name" val="DMA"></attstr>
+        <attstr name="desc" val="Macau"></attstr>
+        <attstr name="team" val="Team Alba 2011"></attstr>
+        <attstr name="author" val="Gabor Kmetyko"></attstr>
+        <attstr name="car name" val="mpa1-hartbill-2002"></attstr>
+        <attnum name="race number" val="18"></attnum>
+        <attnum name="red" val="0.8"></attnum>
+        <attnum name="green" val="0.8"></attnum>
+        <attnum name="blue" val="0.3"></attnum>
+        <attstr name="features" val=""></attstr>
+      </section>
+
+    </section>
+  </section>
+</params>

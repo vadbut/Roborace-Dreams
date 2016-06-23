@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    file                 : viper-gts-r.xml
+    created              : Sat Mar  3 18:46:37 CET 2001
+    copyright            : (C) 2001 by Eric Espié                         
+    email                : Eric.Espie@torcs.org   
+    version              : $Id$                                  
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="mpa12-murasama" type="template">
+
+	<section name="private">
+		<attnum name="gear up rpm" min="0" max="9000" val="8300"/>
+		<attnum name="mu scale" min="0" max="2" val="1.0"/>
+		<attnum name="fly height" unit="m" min="0" max="0.5" val="0.06"/>
+		<attnum name="factor 0" min="0" max="1.2" val="1.015"/>
+		<attnum name="kz scale" min="0" max="1" val="0.2"/>
+		<attnum name="steer k acc" min="-10" max="10" val="0"/>
+		<attnum name="steer k dec" min="-10" max="10" val="0"/>
+		<attnum name="spd ctrl normal" min="0" max="4" val="3"/>
+		<attnum name="spd ctrl traffic" min="0" max="4" val="3"/>
+		<attnum name="stay together" unit="m" min="0" max="2000" val="0"/>
+		<attnum name="pit entry offset" unit="m" min="-250" max="250" val="0"/>
+		<attnum name="pit exit offset" unit="m" min="-250" max="250" val="0"/>
+  </section>
+</params>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

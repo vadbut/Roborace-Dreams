@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- 
+    file          : default.xml 
+    created       : 25 Dec 2007
+    last modified : 22 Nov 2010
+    copyright     : (C) 2007-2010 Wolf-Dieter Beelitz
+
+    USR - LS1-TAIPAN-LTSR
+
+    SVN version   : $Id$
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../../../src/libs/tgf/params.dtd">
+<params name="ls1-taipan-ltsr" type="template" mode="mw">
+
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" val="14.0"/>
+	</section>
+	
+	<section name="Rear Wing">
+		<attnum name="angle" unit="deg" val="24.0"/>
+	</section>
+
+	<section name="private">
+		<attnum name="int margin" val="1.5"/>
+		<attnum name="brake margin" val="15.2"/>
+		<attnum name="base speed factor" val="1.28"/>
+		<attnum name="base brake factor" val="1.50"/>
+		<attnum name="brake mod" val="1.0"/>
+		<attnum name="overtake caution" val="17.5"/>
+	</section>
+</params>

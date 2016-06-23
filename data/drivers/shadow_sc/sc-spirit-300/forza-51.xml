@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    file                 : sc-cavallo-360.xml
+    created              : Sat Mar  3 18:46:37 CET 2001
+    copyright            : (C) 2001 by Eric Espié                       
+    email                : Eric.Espie@torcs.org   
+    version              : $Id$                                  
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="sc-spirit-300" type="template" mode="mw">
+	<section name="Brake System">
+		<attnum name="front-rear brake repartition" min="0.4" max="0.7" val="0.48"/>
+		<attnum name="max pressure" unit="kPa" min="5000" max="50000" val="41700"/>
+	</section>
+	
+	<section name="private">
+		<attnum name="shift" val="0.80"/>
+		<attnum name="kz scale" val="0.55"/>
+		<attnum name="bump factor" val="0.2"/>
+		<attnum name="mu scale" val="0.80"/>
+		<attnum name="factor 0" val="1.005"/>
+		<attnum name="steer k acc" val="3"/>
+		<attnum name="steer k dec" val="0"/>
+		<attnum name="spd ctrl normal" val="6"/>
+		<attnum name="spd ctrl traffic" val="3"/>
+		<attnum name="spd ctrl extra" val="6"/>
+		<attnum name="full fuel" val= "90"/>
+	</section>
+
+</params>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

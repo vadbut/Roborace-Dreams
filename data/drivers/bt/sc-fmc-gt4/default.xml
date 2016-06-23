@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    file        : fordgt.xml
+    created     : Sun Nov 10 18:35:47 CET 2002
+    copyright   : (C) 2002 by Christophe Guionneau                         
+    email       : Eric.Espie@torcs.org   
+    version     : $Id$                                  
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+
+<!--    it under the terms of the GNU General Public License as published by  -->
+
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+
+<!--  Designed by Christophe Guionneau -->
+<params name="GT4" type="template">
+</params>

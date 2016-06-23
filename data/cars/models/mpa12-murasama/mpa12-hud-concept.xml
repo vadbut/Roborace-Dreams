@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HUD>
+
+  
+<section name="display">
+
+	<attstr name="3d object" val="display"/>
+
+	<section name="Background">
+		<!-- HUD size in pixels -->
+		<attstr name="size x" val="256"/>
+		<attstr name="size y" val="128"/>
+		
+		<section name="color day">
+			<!-- background color when car lights are off-->
+			<attstr name="color red" val="0.051"/>
+			<attstr name="color green" val="0.525"/>
+			<attstr name="color blue" val="0.396"/>
+		</section>
+		
+		<!-- background color when car lights are on (for GT cars and night racing)
+		
+		<section name="color night">
+			<attstr name="color red" val="0.051"/>
+			<attstr name="color green" val="0.525"/>
+			<attstr name="color blue" val="0.396"/>
+		</section>
+		
+		-->
+		
+		<!-- Image layed on top of color -->
+		<attstr name="Image" val="NONE"/>
+		<!-- If an image is used change none by its path, the image should be the same size as the HUD -->
+	</section>
+
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="GEAR"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="202"/>
+		<attstr name="y position" unit="px" val="50"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="TEXT"/>
+		<attstr name="text" val="vel."/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="4"/>
+		<attstr name="y position" unit="px" val="63"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="SPEED"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="48"/>
+		<attstr name="y position" unit="px" val="63"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="TEXT"/>
+		<attstr name="text" val="rpm"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="18"/>
+		<attstr name="y position" unit="px" val="85"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="RPM"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="58"/>
+		<attstr name="y position" unit="px" val="85"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="TEXT"/>
+		<attstr name="text" val="fuel"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="12"/>
+		<attstr name="y position" unit="px" val="125"/>
+	</section>
+
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="REMAININGFUEL"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="6.5"/>
+		
+		<attstr name="x position" unit="px" val="62"/>
+		<attstr name="y position" unit="px" val="125"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="TEXT"/>
+		<attstr name="text" val="best"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="8"/>
+		
+		<attstr name="x position" unit="px" val="6"/>
+		<attstr name="y position" unit="px" val="5"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="BESTLAP"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="8"/>
+		
+		<attstr name="x position" unit="px" val="82"/>
+		<attstr name="y position" unit="px" val="5"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="TEXT"/>
+		<attstr name="text" val="curr."/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="8"/>
+		
+		<attstr name="x position" unit="px" val="6"/>
+		<attstr name="y position" unit="px" val="33"/>
+	</section>
+	
+	<section name="param">
+		<attstr name="parameter" in="TEXT,GEAR,SPEED,RPM,CURRENTLAP,BESTLAP,LASTLAP,AVGDELTA,BESTDELTA,PREVIOUSDELTA,FRONTCARGAP,BACKCARGAP,REMAININGTIME,TRACKPOSITION,REMAININGFUEL,REMAININGFUELLAPS,FUELCONSUMPTIONLAPS" val="CURRENTLAP"/>
+		
+		<attstr name="color red" val="0.780"/>
+		<attstr name="color green" val="0.910"/>
+		<attstr name="color blue" val="0.557"/>
+		<attstr name="font" val="DISPLAY FREE TFB.ttf"/>
+		<attstr name="font size" unit="pt" val="8"/>
+		
+		<attstr name="x position" unit="px" val="82"/>
+		<attstr name="y position" unit="px" val="33"/>
+	</section>
+</section>
+
+<section name="leds">
+	
+	<section name="led">
+		<attstr name="3d object" val="led1"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="SHIFT"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="ONOFF"/>
+		<attstr name="change value" unit="rpm" val="10000"/>
+	</section>
+	
+	<section name="led">
+		<attstr name="3d object" val="led2"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="SHIFT"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="ONOFF"/>
+		<attstr name="change value" unit="rpm" val="10500"/>
+	</section>
+	
+	<section name="led">
+		<attstr name="3d object" val="led3"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="SHIFT"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="ONOFF"/>
+		<attstr name="change value" unit="rpm" val="11000"/>
+	</section>
+	
+	<section name="led">
+		<attstr name="3d object" val="led4"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="SHIFT"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="ONOFF"/>
+		<attstr name="change value" unit="rpm" val="11500"/>
+	</section>
+	
+	<section name="led">
+		<attstr name="3d object" val="led5"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="SHIFT"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="ONOFF"/>
+		<attstr name="change value" unit="rpm" val="12000"/>
+	</section>
+	
+	<section name="led">
+		<attstr name="3d object" val="led6"/>
+		<attstr name="off texture" val="led-off.png"/>
+		<attstr name="on texture" val="led-on.png"/>
+		
+		<attstr name="parameter" in="SHIFT,HEATALARM,FUELALARM,PITSPEED,BOOST,DRS,LOWBATTERYKERS" val="PITSPEED"/>
+		<attstr name="default state" val="off"/>
+		<attstr name="state change" in="ONOFF,BLINK" val="BLINK"/>
+		<attstr name="blink speed" unit="Hz" val="2"/>
+	</section>
+</section>
+</HUD>

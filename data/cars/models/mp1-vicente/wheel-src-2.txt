@@ -1,0 +1,8 @@
+gimp
+lineal blur:
+180 degress
+0 px
+50 px
+100 px
+200 px
+

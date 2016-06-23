@@ -1,0 +1,23 @@
+AC3Db
+MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0.2 0.2 0.2  shi 128  trans 0
+OBJECT world
+kids 1
+OBJECT poly
+name "rect"
+loc -0.872699 0.127638 -0.00346628
+texture "mp10-sdr-kart125.png"
+crease 45.000000
+numvert 4
+-0.010684 -0.105055 -0.114827
+-0.010684 -0.105055 0.114827
+0.023289 0.136674 0.114827
+0.023289 0.136674 -0.114827
+numsurf 1
+SURF 0x30
+mat 0
+refs 4
+3 0.703078 0.0840285
+2 0.781273 0.0840285
+1 0.781273 0.00366145
+0 0.703078 0.00366145
+kids 0

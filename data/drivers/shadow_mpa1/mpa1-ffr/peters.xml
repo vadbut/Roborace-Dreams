@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- 
+    file          : default.xml 
+    created       : 12 Oct 2009
+    last modified : 24 Oct 2010
+    copyright     : (C) 2010 Wolf-Dieter Beelitz
+
+    SIMPLIX_MPA1 - ALL CARS
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../../../../../src/libs/tgf/params.dtd">
+<params name="mpa1-murasama" type="template" mode="mw">
+      <!-- Car parameters >>> -->
+	  <section name="Front Wing">	 
+	    <attnum name="angle" unit="deg" min="1" max="29" val="20"/>	 
+	  </section>	 
+		 
+	  <section name="Rear Wing">	 
+	    <attnum name="angle" unit="deg" min="1" max="29" val="17"/>	 
+	  </section>	
+
+	<section name="Brake System">
+		<attnum name="front-rear brake repartition" min="0.3" max="0.7" val="0.53"/>
+		<attnum name="max pressure" unit="kPa" min="5000" max="65000" val="45000"/>
+	</section>	  
+
+	<section name="private">
+		<attnum name="shift" min="0" max="1" val="0.99"/>
+		<attnum name="mu scale" min="0" max="2" val="0.90"/>
+		<attnum name="fly height" unit="m" min="0" max="0.5" val="0.06"/>
+		<attnum name="factor 0" min="0" max="1.2" val="1.005"/>
+		<attnum name="kz scale" min="0" max="1" val="0.45"/>
+		<attnum name="bump factor" min="0" max="1" val="1"/>
+		<attnum name="steer k acc" min="-10" max="10" val="0"/>
+		<attnum name="steer k dec" min="-10" max="10" val="0"/>
+		<attnum name="spd ctrl normal" min="0" max="6" val="6"/>
+		<attnum name="spd ctrl traffic" min="0" max="6" val="6"/>
+		<attnum name="spd ctrl extra" min="0" max="6" val="0"/>
+		<attnum name="steer ctrl" min="0" max="6" val="0"/>
+		<attnum name="stay together" unit="m" min="0" max="2000" val="0"/>
+		<attnum name="pit entry offset" unit="m" min="-250" max="250" val="0"/>
+		<attnum name="pit exit offset" unit="m" min="-250" max="250" val="0"/>
+	</section>
+</params>

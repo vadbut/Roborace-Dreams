@@ -1,0 +1,8 @@
+gimp
+radial blur:
+center 512, 512
+0 degrees
+20 degrees
+50 degrees
+180 degrees
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file          : drivers/simplix_srw/srw-kanagawa-gtr/default
+    created       : 12/19/14
+    last modified : 12/19/14
+    copyright     : (C) 2010-2014 Wolf-Dieter Beelitz
+
+    SVN version   : $Id:$
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "params.dtd">
+
+
+<params name="srw-kanagawa-gtr">
+  <section name="Features">
+    <attstr name="shifting aero coordinate" in="yes" val="yes"/>
+    <attstr name="fixed low speed grip" in="yes" val="yes"/>
+    <attstr name="realistic gear change" in="yes,no" val="yes"/>
+    <attstr name="realistic rev limiter" in="yes" val="yes"/>
+    <attstr name="tire temperature and degradation" in="yes" val="yes"/>
+    <attstr name="fixed wheel force" in="yes" val="yes"/>
+    <attstr name="enable cliftlimit" in="yes" val="yes"/>
+    <attstr name="enable abs" in="yes,no" val="yes"/>
+    <attstr name="enable tcl" in="yes,no" val="yes"/>
+    <attstr name="enable esp" in="yes,no" val="yes"/>
+  </section>
+
+  <section name="Rear Wing">
+    <attnum name="angle" unit="deg" min="0" max="18" val="15"/>
+  </section>
+
+  <section name="Brake System">
+    <attnum name="front-rear brake repartition" min="0.45" max="0.65" val="0.5475"/>
+    <attnum name="max pressure" unit="kPa" min="5000" max="40000" val="20000"/>
+  </section>
+
+  <section name="Front Anti-Roll Bar">
+    <attnum name="spring" unit="kN/m" min="0" max="50" val="0"/>
+  </section>
+
+  <section name="Rear Anti-Roll Bar">
+    <attnum name="spring" unit="kN/m" min="0" max="50" val="42.9"/>
+  </section>
+
+  <section name="Front Right Wheel">
+    <attnum name="ride height" unit="mm" min="60" max="140" val="80"/>
+    <attnum name="toe" unit="deg" min="-1" max="1" val="0.26"/>
+    <attnum name="camber" unit="deg" min="-5" max="0" val="-5"/>
+  </section>
+
+  <section name="Front Left Wheel">
+    <attnum name="ride height" unit="mm" min="60" max="140" val="80"/>
+    <attnum name="toe" unit="deg" min="-1" max="1" val="-0.26"/>
+    <attnum name="camber" unit="deg" min="-5" max="0" val="-5"/>
+  </section>
+
+  <section name="Rear Right Wheel">
+    <attnum name="ride height" unit="mm" min="60" max="160" val="80"/>
+    <attnum name="toe" unit="deg" min="-1" max="1" val="-0"/>
+    <attnum name="camber" unit="deg" min="-2.5" max="0" val="-2.5"/>
+  </section>
+
+  <section name="Rear Left Wheel">
+    <attnum name="ride height" unit="mm" min="60" max="160" val="80"/>
+    <attnum name="toe" unit="deg" min="-1" max="1" val="0"/>
+    <attnum name="camber" unit="deg" min="-2.5" max="0" val="-2.5"/>
+  </section>
+
+  <section name="Front Right Suspension">
+    <attnum name="spring" unit="kN/m" min="50" max="150" val="133.1"/>
+    <attnum name="suspension course" unit="m" min="0.1" max="0.28" val="0.155"/>
+    <attnum name="slow bump" unit="kN/m/s" min="1" max="10" val="7.51"/>
+    <attnum name="slow rebound" unit="kN/m/s" min="1" max="10" val="6.75"/>
+    <attnum name="fast bump" unit="kN/m/s" min="0.1" max="2" val="1.66"/>
+    <attnum name="fast rebound" unit="kN/m/s" min="0.1" max="2" val="1.36"/>
+  </section>
+
+  <section name="Front Left Suspension">
+    <attnum name="spring" unit="kN/m" min="50" max="150" val="133.1"/>
+    <attnum name="suspension course" unit="m" min="0.1" max="0.28" val="0.155"/>
+    <attnum name="slow bump" unit="kN/m/s" min="1" max="10" val="7.51"/>
+    <attnum name="slow rebound" unit="kN/m/s" min="1" max="10" val="6.75"/>
+    <attnum name="fast bump" unit="kN/m/s" min="0.1" max="2" val="1.66"/>
+    <attnum name="fast rebound" unit="kN/m/s" min="0.1" max="2" val="1.36"/>
+  </section>
+
+  <section name="Rear Right Suspension">
+    <attnum name="spring" unit="kN/m" min="50" max="150" val="146.77"/>
+    <attnum name="suspension course" unit="m" min="0.1" max="0.28" val="0.195"/>
+    <attnum name="slow bump" unit="kN/m/s" min="1" max="10" val="6.54"/>
+    <attnum name="slow rebound" unit="kN/m/s" min="1" max="10" val="6.97"/>
+    <attnum name="fast bump" unit="kN/m/s" min="0.1" max="2" val="1.96"/>
+    <attnum name="fast rebound" unit="kN/m/s" min="0.1" max="2" val="1.83"/>
+  </section>
+
+  <section name="Rear Left Suspension">
+    <attnum name="spring" unit="kN/m" min="50" max="150" val="146.77"/>
+    <attnum name="suspension course" unit="m" min="0.1" max="0.28" val="0.195"/>
+    <attnum name="slow bump" unit="kN/m/s" min="1" max="10" val="6.54"/>
+    <attnum name="slow rebound" unit="kN/m/s" min="1" max="10" val="6.97"/>
+    <attnum name="fast bump" unit="kN/m/s" min="0.1" max="2" val="1.96"/>
+    <attnum name="fast rebound" unit="kN/m/s" min="0.1" max="2" val="1.83"/>
+  </section>
+
+  <section name="simplix private">
+    <attnum name="genetic optimisation" min="0" max="1" val="0"/>
+    <attnum name="initial fuel" min="-1" max="74" val="-1"/>
+    <attnum name="scale brake" min="0.75" max="0.95" val="0.93"/>
+    <attnum name="scale mu" min="0.7" max="1.2" val="0.79"/>
+    <attnum name="scale bump" min="0.05" max="0.5" val="0.166"/>
+    <attnum name="base mode" min="0.96" max="1.04" val="1.01659"/>
+    <attnum name="base scale" min="1" max="1.01" val="1.01"/>
+    <attnum name="lookahead" min="1" max="10" val="3"/>
+    <attnum name="lookaheadfactor" min="0.01" max="0.5" val="0.15"/>
+    <attnum name="shift up" min="0.8" max="0.99" val="0.974"/>
+    <attnum name="shift margin" min="0.7" max="1" val="0.9"/>
+    <attnum name="clutch delta" min="0.001" max="1" val="0.043"/>
+    <attnum name="pit test stop" min="0" max="1" val="0"/>
+    <attnum name="qualification" min="0" max="1" val="0"/>
+    <attnum name="reserve" min="0" max="20000" val="2000"/>
+    <attnum name="fuelper100km" min="1" max="100" val="70"/>
+  </section>
+
+  <section name="Car">
+    <attnum name="initial fuel" min="74" max="74" val="74"/>
+  </section>
+
+</params>

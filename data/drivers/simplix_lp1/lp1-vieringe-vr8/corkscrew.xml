@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- 
+    file          : default.xml 
+    created       : 25 Dec 2007
+    last modified : 02 May 2011
+    copyright     : (C) 2007-2011 Wolf-Dieter Beelitz
+
+    SIMPLIX - LS1-ARCHER-R9 "ARROWHEAD"
+
+    SVN version   : $Id: default.xml 4150 2011-11-15 21:05:58Z wdbee $
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+<!DOCTYPE params SYSTEM "../../../src/libs/tgf/params.dtd">
+<params name="ls1-archer-r9" type="template" mode="mw">
+      <!-- Car parameters >>> -->
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" min="5" max="17" val="14.0"/>
+	</section>
+	
+	<section name="Rear Wing">
+		<attnum name="angle" unit="deg" min="5" max="30" val="23.0"/>
+	</section>
+      <!-- <<< Car parameters -->
+
+      <!-- Robot parameters >>> -->
+	<section name="simplix private">
+            <!-- Use this parameters to setup the car's fuel strategy -->
+		<attnum name="reserve" unit="m" min="0.0" max="20000.0" val="2000"/>
+		<attnum name="start fuel" min="-1" max="60.0" val="-1"/>
+		<attnum name="fuelper100km" min="1.0" max="100.0" val="80.0"/>
+
+            <!-- Use the parameters below to tune the robots 
+                 detection of the car's limits -->
+		<attnum name="accel out" min="0" max="1" val="1"/>
+		<attnum name="clutch max" min="0.001" max="1.0" val="0.5"/>
+		<attnum name="early shift" min="0.90" max="1.00" val="0.96"/>
+		<attnum name="fly height" min="0.01" max="1.0" val="0.20"/>
+		<attnum name="jump offset" min="0" max="0.1" val="0.04"/>
+		<attnum name="tcl slip" min="1.0" max="10.0" val="1.0"/>
+		<attnum name="tcl factor" min="1.0" max="10.0" val="1.0"/>
+		<attnum name="drift factor" min="1.0" max="10.0" val="2.4"/>
+		<attnum name="lookaheadfactor" min="0.0" max="0.5" val="0.1"/>
+		<attnum name="scale steer" min="0.1" max="2.0" val="1.0"/>
+		<attnum name="brake limit" min="-75.0" max="-1.0" val="-40.0"/>
+		<attnum name="scale brake" min="0" max="2" val="1.25"/>
+		<attnum name="scale mu" min="0" max="5" val="1.04"/>
+		<attnum name="scale brake rain" min="0" max="1" val="1.0"/>
+		<attnum name="scale mu rain" min="0" max="1" val="1.0"/>
+
+            <!-- Use the parameters below to tune the robots 
+                 detection of the car's limits while qualification -->
+		<attnum name="qualy brake" min="0" max="2" val="0.75"/>
+		<attnum name="qualy mu" min="0" max="2" val="0.85"/>
+
+            <!-- Do not change the parameters below 
+                 unless you really know what you are doing -->
+		<attnum name="length margin" min="1.0" max="10.0" val="2.0"/>
+		<attnum name="avoid width" min="0.0" max="3.0" val="2.15"/>
+		<attnum name="scale avoid" min="1.0" max="200.0" val="15.0"/>
+		<attnum name="scale min mu" min="0.1" max="1.0" val="0.8"/>
+		<attnum name="stay together" min="10.0" max="2000.0" val="10"/>
+
+	</section>
+      <!-- <<< Robot parameters -->
+</params>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../libs/tgf/params.dtd">
+
+<params name="dandroid_trb1" type="robotdef">
+  <section name="Robots">
+    <section name="index">
+ 
+      <section name="0">
+        <attstr name="name" val="Baillie Millar"></attstr>
+        <attstr name="short name" val="B. Millar"></attstr>
+        <attstr name="code name" val="MIL"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c2"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-boxer-trbrs"></attstr>
+        <attnum name="race number" val="103"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="1">
+        <attstr name="name" val="Kerr Murray"></attstr>
+        <attstr name="short name" val="K. Murray"></attstr>
+        <attstr name="code name" val="MUR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c2"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-boxer-trbrs"></attstr>
+        <attnum name="race number" val="104"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="2">
+        <attstr name="name" val="Nino Toscani"></attstr>
+        <attstr name="short name" val="N. Toscani"></attstr>
+        <attstr name="code name" val="TOS"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c1"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-cavallo-360rb"></attstr>
+        <attnum name="race number" val="101"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="3">
+        <attstr name="name" val="Tobias Thalberg"></attstr>
+        <attstr name="short name" val="T. Thalberg"></attstr>
+        <attstr name="code name" val="THA"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c1"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-cavallo-360rb"></attstr>
+        <attnum name="race number" val="102"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="4">
+        <attstr name="name" val="Gouta Oosawa"></attstr>
+        <attstr name="short name" val="G. Oosawa"></attstr>
+        <attstr name="code name" val="OOS"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c6"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-sector-rb1"></attstr>
+        <attnum name="race number" val="111"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="5">
+        <attstr name="name" val="Daniel Brunstad"></attstr>
+        <attstr name="short name" val="D. Brunstad"></attstr>
+        <attstr name="code name" val="BRU"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c6"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-sector-rb1"></attstr>
+        <attnum name="race number" val="112"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="6">
+        <attstr name="name" val="Milo Bakken"></attstr>
+        <attstr name="short name" val="M. Bakken"></attstr>
+        <attstr name="code name" val="BAK"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c5"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-silber-rblk"></attstr>
+        <attnum name="race number" val="109"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="7">
+        <attstr name="name" val="Rustam Matveyev"></attstr>
+        <attstr name="short name" val="R. Matveyev"></attstr>
+        <attstr name="code name" val="MAT"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c5"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-silber-rblk"></attstr>
+        <attnum name="race number" val="110"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="8">
+        <attstr name="name" val="Hugo Wallace"></attstr>
+        <attstr name="short name" val="H. Wallace"></attstr>
+        <attstr name="code name" val="WAL"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c3"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-spirit-rb1lt"></attstr>
+        <attnum name="race number" val="105"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="9">
+        <attstr name="name" val="Robert McMillan"></attstr>
+        <attstr name="short name" val="R. McMillan"></attstr>
+        <attstr name="code name" val="MCM"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c3"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-spirit-rb1lt"></attstr>
+        <attnum name="race number" val="106"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="10">
+        <attstr name="name" val="James Delvare"></attstr>
+        <attstr name="short name" val="J. Delvare"></attstr>
+        <attstr name="code name" val="DEL"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c4"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-taipan-rb1"></attstr>
+        <attnum name="race number" val="107"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="11">
+        <attstr name="name" val="Mirko Garbas"></attstr>
+        <attstr name="short name" val="Mirko Garbas"></attstr>
+        <attstr name="code name" val="GAR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c4"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-taipan-rb1"></attstr>
+        <attnum name="race number" val="108"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="12">
+        <attstr name="name" val="Ervin Paradis"></attstr>
+        <attstr name="short name" val="E. Paradis"></attstr>
+        <attstr name="code name" val="PAR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c8"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-vieringe-5rb"></attstr>
+        <attnum name="race number" val="115"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="13">
+        <attstr name="name" val="Allan Carlsson"></attstr>
+        <attstr name="short name" val="A. Carlsson"></attstr>
+        <attstr name="code name" val="CAR"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c8"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-vieringe-5rb"></attstr>
+        <attnum name="race number" val="116"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="14">
+        <attstr name="name" val="David Dooks"></attstr>
+        <attstr name="short name" val="D. Dooks"></attstr>
+        <attstr name="code name" val="DOO"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c7"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-zaxxon-rb"></attstr>
+        <attnum name="race number" val="113"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+      <section name="15">
+        <attstr name="name" val="Tim Maur"></attstr>
+        <attstr name="short name" val="T. Maur"></attstr>
+        <attstr name="code name" val="MAU"></attstr>
+        <attstr name="desc" val=""></attstr>
+        <attstr name="team" val="dandroid-trb1c7"></attstr>
+        <attstr name="author" val="Daniel Schellhammer"></attstr>
+        <attstr name="car name" val="trb1-zaxxon-rb"></attstr>
+        <attnum name="race number" val="114"></attnum>
+        <attnum name="red" val="1.0"></attnum>
+        <attnum name="green" val="0.0"></attnum>
+        <attnum name="blue" val="0.0"></attnum>
+        <attstr name="features" val="wet track"></attstr>
+      </section>
+
+    </section>
+  </section>
+</params>

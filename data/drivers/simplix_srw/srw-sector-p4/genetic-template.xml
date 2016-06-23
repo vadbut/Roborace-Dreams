@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    file          : drivers/simplix_srw/srw-sector-p4/genetic-template
+    created       : 02/16/13
+    last modified : 11/16/14
+    copyright     : (C) 2013-2014 Wolf-Dieter Beelitz
+
+    SVN version   : $Id:$
+-->
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!-- <!DOCTYPE params SYSTEM "params.dtd"> -->
+
+<!-- META DATA FOR GENETIC PARAMETER OPTIMIZATION -->
+<params name="Genetic Optimization">
+  <!-- TABLE OF CONTENT -->
+  <section name="Table of Content">
+    <attnum name="major version" val="1"/>
+    <attnum name="minor version" val="0"/>
+    <attstr name="robot" val="simplix_srw"/>
+    <attstr name="car type" val="srw-sector-p4"/>
+    <attstr name="private" val="simplix private"/>
+    <attnum name="weight of damages" val="100.0"/>
+    <attnum name="get initial value" val="1"/>
+    <attnum name="optimisation loops" val="250"/>
+    <attstr name="author" val="Wolf-Dieter Beelitz"/>
+  </section>
+  <!-- END OF TABLE OF CONTENT -->
+
+  <!-- META DATA OF GLOBAL PARAMETERS -->
+  <section name="Global">
+	  
+    <!-- FIRST GROUP OF META DATA OF GLOBAL PARAMETERS -->
+    <!-- THERE ARE NEARLY NO CAR PARAMETERS ALLOWED AT -->
+    <!-- THE CAR TYPE SETUPS OF THE CAR SET SUPERCARS! -->
+
+    <!-- META DATA OF FIRST GLOBAL PARAMETER -->
+
+    <section name="Rear Wing">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="R-Wing      "/>
+      <attstr name="section" val="Rear Wing"/>
+      <attstr name="parameter" val="angle"/>
+      <attstr name="unit" val="deg"/>
+      <attnum name="range" min="0" max="25" unit="deg" val="6.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="2.0"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Front Anti-Roll Bar">
+      <attnum name="active" val="1"/>
+      <attstr name="label" val="FAntiRollBar"/>
+      <attstr name="section" val="Front Anti-Roll Bar"/>
+      <attstr name="parameter" val="spring"/>
+      <attstr name="unit" val="kN/m"/>
+      <attnum name="range" min="0" max="50" unit="kN/m" val="3.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="5"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Front Anti-Roll Bar Suspension Course">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="FARBarSupCrs"/>
+      <attstr name="section" val="Front Anti-Roll Bar"/>
+      <attstr name="parameter" val="suspension course"/>
+      <attstr name="unit" val="m"/>
+      <attnum name="range" min="0.05" max="0.1" unit="m" val="0.054"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.05"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Rear Anti-Roll Bar">
+      <attnum name="active" val="1"/>
+      <attstr name="label" val="RAntiRollBar"/>
+      <attstr name="section" val="Rear Anti-Roll Bar"/>
+      <attstr name="parameter" val="spring"/>
+      <attstr name="unit" val="kN/m"/>
+      <attnum name="range" min="0" max="50" unit="kN/m" val="39.07"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="5"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Rear Anti-Roll Bar Suspension Course">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="RARBarSupCrs"/>
+      <attstr name="section" val="Rear Anti-Roll Bar"/>
+      <attstr name="parameter" val="suspension course"/>
+      <attstr name="unit" val="m"/>
+      <attnum name="range" min="0.05" max="0.2" unit="m" val="0.079"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.05"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="F-Suspension">
+      <attnum name="active" val="1"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-Suspension"/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="spring"/>
+      <attstr name="unit" val="kN/m"/>
+      <attnum name="range" min="10" max="300" unit="kN/m" val="57.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="10"/>
+      <attnum name="round" val="10"/>
+    </section>
+
+    <section name="F-Suspension Course">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-SuspCourse"/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="suspension course"/>
+      <attstr name="unit" val="m"/>
+      <attnum name="range" min="0.1" max="0.28" unit="m" val="0.12"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.05"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="F-Suspension Packers">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-S. Packers"/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="packers"/>
+      <attstr name="unit" val="mm"/>
+      <attnum name="range" min="0.0" max="10.0" unit="mm" val="0.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.5"/>
+      <attnum name="round" val="10"/>
+    </section>
+
+    <section name="F-SlowBump">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-SlowBump  "/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="slow bump"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="5.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="F-SlowRebnd">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-SlowRebnd "/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="slow rebound"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="3.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="F-FastBump">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-FastBump  "/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="fast bump"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="0.73"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="F-FastRebnd">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="F-FastRebnd "/>
+      <attstr name="section" val="Front %s Suspension"/>
+      <attstr name="parameter" val="fast rebound"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="0.35"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="R-Suspension">
+      <attnum name="active" val="1"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-Suspension"/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="spring"/>
+      <attstr name="unit" val="kN/m"/>
+      <attnum name="range" min="10" max="300" unit="kN/m" val="70.5"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="R-Suspension Course">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-SuspCourse"/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="suspension course"/>
+      <attstr name="unit" val="m"/>
+      <attnum name="range" min="0.1" max="0.28" unit="m" val="0.16"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.05"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="R-Suspension Packers">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-S. Packers"/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="packers"/>
+      <attstr name="unit" val="mm"/>
+      <attnum name="range" min="0.0" max="10.0" unit="mm" val="0.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.5"/>
+      <attnum name="round" val="10"/>
+    </section>
+
+    <section name="R-SlowBump">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-SlowBump  "/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="slow bump"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="4.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="R-SlowRebnd">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-SlowRebnd "/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="slow rebound"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="5.2"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="R-FastBump">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-FastBump  "/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="fast bump"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="0.68"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="R-FastRebnd">
+      <attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+      <attstr name="label" val="R-FastRebnd "/>
+      <attstr name="section" val="Rear %s Suspension"/>
+      <attstr name="parameter" val="fast rebound"/>
+      <attstr name="unit" val="kN/m/s"/>
+      <attnum name="range" min="0.1" max="100" unit="kN/m/s" val="0.95"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.10"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Clutch">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="Clutch Delta"/>
+      <attstr name="section" val="simplix private"/>
+      <attstr name="parameter" val="clutch delta"/>
+      <attnum name="range" min="0.001" max="1.000" val="0.1"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Brake Balance">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="BrakeRepart."/>
+      <attstr name="section" val="Brake System"/>
+      <attstr name="parameter" val="front-rear brake repartition"/>
+      <attnum name="range" min="0.3" max="0.7" val="0.52"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="10000"/>
+    </section>
+
+    <section name="Brake Pressure">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="MxBrakePress"/>
+      <attstr name="section" val="Brake System"/>
+      <attstr name="parameter" val="max pressure"/>
+      <attstr name="unit" val="kPa"/>
+      <attnum name="range" min="5000" max="40000" unit="kPa" val="22000"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="500"/>
+      <attnum name="round" val="0.01"/>
+    </section>
+
+    <section name="Scale Braking">
+      <attnum name="active" val="1"/>
+      <attstr name="label" val="Scale Brakes"/>
+      <attstr name="section" val="simplix private"/>
+      <attstr name="parameter" val="scale brake"/>
+      <attnum name="range" min="0.85" max="0.95" val="0.89"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Scale Cornering">
+	<attnum name="active" val="1"/>
+      <attstr name="label" val="Scale Speed "/>
+      <attstr name="section" val="simplix private"/>
+      <attstr name="parameter" val="scale mu"/>
+      <attnum name="range" min="0.9" max="1.2" val="0.95"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="100"/>
+    </section>
+
+    <section name="Scale Bumps">
+	<attnum name="active" val="1"/>
+	<attstr name="label" val="Scale Bumps "/>
+	<attstr name="section" val="simplix private"/>
+	<attstr name="parameter" val="scale bump"/>
+	<attnum name="range" min="0.15" max="0.2" val="0.17"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.05"/>
+	<attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Look ahead">
+	<attnum name="active" val="0"/>
+	<attstr name="label" val="Look ahead  "/>
+	<attstr name="section" val="simplix private"/>
+	<attstr name="parameter" val="lookahead"/>
+	<attnum name="range" min="1.0" max="10.0" val="3.5"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.5"/>
+	<attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Look ahead factor">
+	<attnum name="active" val="0"/>
+	<attstr name="label" val="Look ahead f"/>
+	<attstr name="section" val="simplix private"/>
+	<attstr name="parameter" val="lookaheadfactor"/>
+	<attnum name="range" min="0.01" max="0.5" val="0.135"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.05"/>
+	<attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Center of corner">
+	<attnum name="active" val="1"/>
+	<attstr name="label" val="Base Mode   "/>
+	<attstr name="section" val="simplix private"/>
+	<attstr name="parameter" val="base mode"/>
+	<attnum name="range" min="0.98" max="0.99" val="0.98576"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.01"/>
+	<attnum name="round" val="100000"/>
+    </section>
+
+    <section name="Curvature of Corner">
+	<attnum name="active" val="1"/>
+	<attstr name="label" val="Base Scale  "/>
+	<attstr name="section" val="simplix private"/>
+	<attstr name="parameter" val="base scale"/>
+	<attnum name="range" min="1.000" max="1.001" val="1.00026"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.01"/>
+	<attnum name="round" val="100000"/>
+    </section>
+
+    <section name="Front Ride Height">
+	<attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+	<attstr name="label" val="Ride Height F"/>
+	<attstr name="section" val="Front %s Wheel"/>
+	<attstr name="parameter" val="ride height"/>
+      <attstr name="unit" val="mm"/>
+	<attnum name="range" unit="mm" min="60" max="140" val="60"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="10.0"/>
+	<attnum name="round" val="100"/>
+    </section>
+
+    <section name="Rear Ride Height">
+	<attnum name="active" val="0"/>
+      <attnum name="twosided" val="1"/>
+	<attstr name="label" val="Ride Height R"/>
+	<attstr name="section" val="Rear %s Wheel"/>
+	<attstr name="parameter" val="ride height"/>
+      <attstr name="unit" val="mm"/>
+	<attnum name="range" unit="mm" min="60" max="160" val="80"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="10.0"/>
+	<attnum name="round" val="100"/>
+    </section>
+
+    <section name="Front Toe">
+	<attnum name="active" val="0"/>
+      <attnum name="twosided" val="-1"/>
+	<attstr name="label" val="Front Toe   "/>
+	<attstr name="section" val="Front %s Wheel"/>
+	<attstr name="parameter" val="toe"/>
+      <attstr name="unit" val="deg"/>
+	<attnum name="range" unit="deg" min="-1" max="1" val="0"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.5"/>
+	<attnum name="round" val="100"/>
+    </section>
+
+    <section name="Rear Toe">
+	<attnum name="active" val="0"/>
+      <attnum name="twosided" val="-1"/>
+	<attstr name="label" val="Rear Toe    "/>
+	<attstr name="section" val="Rear %s Wheel"/>
+	<attstr name="parameter" val="toe"/>
+      <attstr name="unit" val="deg"/>
+	<attnum name="range" unit="deg" min="-1" max="1" val="0"/>
+	<attnum name="weight" val="1"/>
+	<attnum name="scale" val="0.5"/>
+	<attnum name="round" val="100"/>
+    </section>
+
+    <section name="Character 1">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 1"/>
+      <attstr name="section" val="simplix private/character/1"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 2">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 2"/>
+      <attstr name="section" val="simplix private/character/2"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 3">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 3"/>
+      <attstr name="section" val="simplix private/character/3"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 4">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 4"/>
+      <attstr name="section" val="simplix private/character/4"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 5">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 5"/>
+      <attstr name="section" val="simplix private/character/5"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 6">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 6"/>
+      <attstr name="section" val="simplix private/character/6"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 7">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 7"/>
+      <attstr name="section" val="simplix private/character/7"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 8">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 8"/>
+      <attstr name="section" val="simplix private/character/8"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="0.1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 9">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 9"/>
+      <attstr name="section" val="simplix private/character/9"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 10">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 10"/>
+      <attstr name="section" val="simplix private/character/10"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 11">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 11"/>
+      <attstr name="section" val="simplix private/character/11"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 12">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 12"/>
+      <attstr name="section" val="simplix private/character/12"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+    <section name="Character 13">
+      <attnum name="active" val="0"/>
+      <attstr name="label" val="character 13"/>
+      <attstr name="section" val="simplix private/character/13"/>
+      <attstr name="parameter" val="performance"/>
+      <attstr name="unit" val=""/>
+      <attnum name="range" min="0.8" max="1.0" unit="" val="1.0"/>
+      <attnum name="weight" val="1"/>
+      <attnum name="scale" val="1"/>
+      <attnum name="round" val="1000"/>
+    </section>
+
+  </section>
+
+  <!-- END OF META DATA OF GLOBAL PARAMETERS -->
+
+  <!-- FOR FUTURE USE BY SIMPLIX ROBOTS! -->
+  <!-- OTHER ROBOTS USING TRACK SEGMENTS -->
+  <!-- WITH SEPARATE LOCAL DEFINED PARA. -->
+
+  <!-- START OF META DATA OF LOCAL PARAMETERS -->
+  <section name="Local Groups">
+    <!-- META DATA OF FIRST PART OF LOCAL PARAMETERS -->
+    <section name="1">
+      <!-- META DATA OF COUNTER OF PARAMETERS PER SECTION IN THIS PART -->
+      <section name="Definition">
+        <attnum name="active" val="0"/>
+        <attstr name="name" val="Track param count"/>
+        <attstr name="section" val="simplix private"/>
+        <attstr name="subsection" val="param seg"/>
+        <attstr name="parameter" val="track param count"/>
+      </section>
+
+      <!-- META DATA OF PARAMETERS IN THIS PART -->
+      <section name="Parameter">
+        <!-- META DATA OF FIRST PARAMETER IN THIS PART -->
+        <section name="Local Center of corner">
+          <attnum name="active" val="1"/>
+          <attstr name="label" val="Base Mode   "/>
+          <attstr name="section" val="simplix private/param seg"/>
+          <attstr name="parameter" val="base mode"/>
+          <attnum name="range" min="0.97" max="1.03" val="0.98"/>
+          <attnum name="weight" val="1"/>
+          <attnum name="scale" val="0.01"/>
+          <attnum name="round" val="100000"/>
+        </section>
+
+        <!-- META DATA OF NEXT PARAMETER IN THIS PART -->
+        <section name="Local Curvature of Corner">
+          <attnum name="active" val="1"/>
+          <attstr name="label" val="Base Scale  "/>
+          <attstr name="section" val="simplix private/param seg"/>
+          <attstr name="parameter" val="base scale"/>
+          <attnum name="range" min="1" max="1.1" val="1.016"/>
+          <attnum name="weight" val="1"/>
+          <attnum name="scale" val="0.01"/>
+          <attnum name="round" val="100000"/>
+        </section>
+
+        <section name="Local Grip">
+          <attnum name="active" val="1"/>
+          <attstr name="label" val="Friction    "/>
+          <attstr name="section" val="simplix private/param seg"/>
+          <attstr name="parameter" val="scale friction"/>
+          <attnum name="range" min="0.8" max="1.2" val="1"/>
+          <attnum name="weight" val="1"/>
+          <attnum name="scale" val="0.1"/>
+          <attnum name="round" val="1000"/>
+        </section>
+
+        <section name="Local Braking">
+          <attnum name="active" val="1"/>
+          <attstr name="label" val="Braking     "/>
+          <attstr name="section" val="simplix private/param seg"/>
+          <attstr name="parameter" val="scale braking"/>
+          <attnum name="range" min="0.8" max="1.2" val="1"/>
+          <attnum name="weight" val="1"/>
+          <attnum name="scale" val="0.1"/>
+          <attnum name="round" val="1000"/>
+        </section>
+
+      </section>
+      <!-- END OF PARAMETERS IN THIS PART -->
+
+    </section>
+    <!-- END OF META DATA FOR THIS PART -->
+
+    <!-- META DATA OF NEXT PART OF LOCAL PARAMETERS -->
+    <!-- ... -->
+    <!-- END OF META DATA FOR THIS PART -->
+
+  </section>
+  <!-- END OF META DATA -->
+</params>
+

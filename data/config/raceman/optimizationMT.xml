@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE params SYSTEM "params.dtd">
+
+
+<params name="OptimizationMT" version="1.0">
+  <section name="Header">
+    <attstr name="name" val="OptimizationMT"/>
+    <attstr name="type" val="OptimizationMT"/>
+    <attstr name="description" val="Multi Track Optimization"/>
+    <attnum name="priority" val="100"/>
+    <attstr name="menu image" val="data/img/splash-champ.jpg"/>
+    <attstr name="run image" val="data/img/splash-run-practice.jpg"/>
+    <attstr name="start image" val="data/img/splash-champstart.jpg"/>
+  </section>
+
+  <section name="Tracks">
+    <attnum name="maximum number" val="28"/>
+
+    <section name="1">
+      <attstr name="name" val="aalborg"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="2">
+      <attstr name="name" val="brondehach"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="3">
+      <attstr name="name" val="bueno"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="4">
+      <attstr name="name" val="chemisay"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="5">
+      <attstr name="name" val="corkscrew"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="6">
+      <attstr name="name" val="espie"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="7">
+      <attstr name="name" val="forza"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="8">
+      <attstr name="name" val="goldstone-sand"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="9">
+      <attstr name="name" val="karwada"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="10">
+      <attstr name="name" val="migrants"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="11">
+      <attstr name="name" val="ruudskogen"/>
+      <attstr name="category" val="circuit"/>
+    </section>
+
+    <section name="12">
+      <attstr name="name" val="allondaz"/>
+      <attstr name="category" val="road"/>
+    </section>
+
+    <section name="13">
+      <attstr name="name" val="charmey"/>
+      <attstr name="category" val="road"/>
+    </section>  
+
+    <section name="14">
+      <attstr name="name" val="e-track-2"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="15">
+      <attstr name="name" val="e-track-3"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="16">
+      <attstr name="name" val="e-track-4"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="17">
+      <attstr name="name" val="inuksuk"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="18">
+      <attstr name="name" val="lombaro"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="19">
+      <attstr name="name" val="longday"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="20">
+      <attstr name="name" val="ole-road-1"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="21">
+      <attstr name="name" val="peters"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="22">
+      <attstr name="name" val="pinabashi"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="23">
+      <attstr name="name" val="prenzlau"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="24">
+      <attstr name="name" val="salty"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="25">
+      <attstr name="name" val="spring"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="26">
+      <attstr name="name" val="street-1"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+    <section name="27">
+      <attstr name="name" val="wheel-1"/>
+      <attstr name="category" val="road"/>
+    </section> 
+
+  </section>
+
+  <section name="Races">
+    <section name="1">
+      <attstr name="name" val="Practice"/>
+    </section>
+
+  </section>
+
+  <section name="All Sessions">
+    <attstr name="rain" val="none"/>
+    <attstr name="clouds" val="scarce clouds"/>
+    <attstr name="time of day" val="afternoon"/>
+  </section>
+
+  <section name="Practice">
+    <attnum name="laps" val="3"/>
+    <attstr name="type" val="practice"/>
+    <attstr name="starting order" val="drivers list"/>
+    <attstr name="restart" val="no"/>
+    <attstr name="display mode" val="results only"/>
+    <attstr name="display results" val="yes"/>
+    <attnum name="distance" unit="km" val="0"/>
+    <attnum name="sessiontime" unit="s" val="0"/>
+    <attstr name="rain" val="none"/>
+    <attstr name="clouds" val="scarce clouds"/>
+    <attstr name="time of day" val="morning"/>
+    <section name="Starting Grid">
+      <attnum name="rows" val="1"/>
+      <attnum name="distance to start" val="100"/>
+      <attnum name="distance between columns" val="20"/>
+      <attnum name="offset within a column" val="10"/>
+      <attnum name="initial speed" val="0"/>
+      <attnum name="initial height" val="0.2"/>
+    </section>
+
+  </section>
+
+  <section name="Qualifications">
+    <attnum name="laps" val="3"/>
+    <attstr name="type" val="qualifications"/>
+    <attstr name="starting order" val="drivers list"/>
+    <attstr name="restart" val="no"/>
+    <attstr name="display mode" val="results only"/>
+    <attstr name="display results" val="yes"/>
+    <attnum name="distance" unit="km" val="0"/>
+    <attnum name="sessiontime" unit="s" val="0"/>
+    <attstr name="rain" val="none"/>
+    <attstr name="clouds" val="scarce clouds"/>
+    <attstr name="time of day" val="morning"/>
+    <section name="Starting Grid">
+      <attnum name="rows" val="1"/>
+      <attnum name="distance to start" val="100"/>
+      <attnum name="distance between columns" val="20"/>
+      <attnum name="offset within a column" val="10"/>
+      <attnum name="initial speed" val="0"/>
+      <attnum name="initial height" val="0.2"/>
+    </section>
+
+  </section>
+
+  <section name="Race">
+    <attnum name="distance" unit="km" val="305"/>
+    <attstr name="type" val="race"/>
+    <attstr name="starting order" val="last race"/>
+    <attstr name="restart" val="no"/>
+    <attnum name="maximum drivers" val="13"/>
+    <attstr name="splash menu" val="yes"/>
+    <section name="Starting Grid">
+      <attnum name="rows" val="2"/>
+      <attnum name="distance to start" val="25"/>
+      <attnum name="distance between columns" val="30"/>
+      <attnum name="offset within a column" val="10"/>
+      <attnum name="initial speed" val="0"/>
+      <attnum name="initial height" val="0.2"/>
+    </section>
+
+  </section>
+
+  <section name="Drivers">
+    <attnum name="maximum number" val="1"/>
+    <attstr name="focused module" val="simplix_srw"/>
+    <attnum name="focused idx" val="0"/>
+    <attstr name="rejected types" val="networkhuman,human"/>
+    <section name="1">
+      <attnum name="idx" val="0"/>
+      <attstr name="module" val="simplix_srw"/>
+      <attnum name="extended" val="0"/>
+      <attnum name="skin targets" val="0"/>
+    </section>
+
+  </section>
+
+  <section name="Configuration">
+    <attnum name="current configuration" val="4"/>
+    <section name="1">
+      <attstr name="type" val="track select"/>
+    </section>
+
+    <section name="2">
+      <attstr name="type" val="drivers select"/>
+    </section>
+
+    <section name="3">
+      <attstr name="type" val="race config"/>
+      <attstr name="race" val="Practice"/>
+      <section name="Options">
+        <section name="1">
+          <attstr name="type" val="race length"/>
+        </section>
+
+        <section name="2">
+          <attstr name="type" val="display mode"/>
+        </section>
+
+        <section name="3">
+          <attstr name="type" val="time of day"/>
+        </section>
+
+        <section name="4">
+          <attstr name="type" val="cloud cover"/>
+        </section>
+
+        <section name="5">
+          <attstr name="type" val="rain fall"/>
+        </section>
+
+      </section>
+
+    </section>
+
+  </section>
+
+  <section name="Drivers Start List">
+  </section>
+
+</params>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    file                 : viper-gts-r.xml
+    created              : Sat Mar  3 18:46:37 CET 2001
+    copyright            : (C) 2001 by Eric Espié                         
+    email                : Eric.Espie@torcs.org   
+    version              : $Id$                                  
+-->
+
+<!--    This program is free software; you can redistribute it and/or modify  -->
+<!--    it under the terms of the GNU General Public License as published by  -->
+<!--    the Free Software Foundation; either version 2 of the License, or     -->
+<!--    (at your option) any later version.                                   -->
+
+<!DOCTYPE params SYSTEM "../../../../src/libs/tgf/params.dtd">
+
+<params name="mpa12-murasama" type="template">
+	<section name="Front Wing">
+		<attnum name="angle" unit="deg" val="18"/>
+	</section>
+	
+	<section name="Rear Wing">
+		<attnum name="angle" unit="deg" val="24"/>
+	</section>
+	
+	<section name="Brake System">
+		<attnum name="front-rear brake repartition" val="0.43"/>
+		<attnum name="max pressure" unit="kPa" val="44000"/>
+	</section>
+
+	<section name="private">
+		<attnum name="gear up rpm" val="9700"/>
+		<attnum name="mu scale" val="0.85"/>
+		<attnum name="fly height" unit="m" val="0.06"/>
+		<attnum name="factor 0" val="1.055"/>
+		<attnum name="kz scale" val="0.46"/>
+		<attbum name="bump factor" val="1.5"/>
+		<attnum name="steer k acc" val="3"/>
+		<attnum name="steer k dec" val="0"/>
+		<attnum name="spd ctrl normal" val="6"/>
+		<attnum name="spd ctrl traffic" val="4"/>
+		<attnum name="spd ctrl extra" val="6"/>
+		<attnum name="steer ctrl" val="0"/>
+		<attnum name="pit entry offset" unit="m" min="-250" max="250" val="0"/>
+		<attnum name="pit exit offset" unit="m" min="-250" max="250" val="0"/>
+  </section>
+</params>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

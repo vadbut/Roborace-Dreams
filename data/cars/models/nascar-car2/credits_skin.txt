@@ -1,0 +1,20 @@
+2003 Winston Cup Carset for NASCAR Racing 2002 Season
+
+Instructions: To install simply extract all 40 cars and the drivers.lst file to you Nascar Racing 2002/series/cup/cars folder & the next time you run the game the carset should appear.
+
+
+
+By: HoosierDaddy24
+
+Credits: Brian Simpson, Janimox, Jon Mickelson, Timmay, & Satchman for templates.
+         Rocket for ratings (which were edited slightly for 2003) 
+         Any and everybody who contributed decals, pictures, etc. I thank you all!!
+
+
+
+HD24
+
+www.masgrafx.com
+www.thunderroadracing.com
+www.nascarnet.com
+

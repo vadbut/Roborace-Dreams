@@ -1,0 +1,11 @@
+Description:
+Update of nascar with new cockpit.
+
+Install:
+Copy the files into the existing cg-nascar-rwd directory. The body ist the same as the extisting cg-nascar-rwd and will be used by computer drivers.
+
+Credits:
+
+wheel- and driver-textures: Team LightSpeed! NR 2003 Template
+driver model: from trb1-car
+body: see readme.txt

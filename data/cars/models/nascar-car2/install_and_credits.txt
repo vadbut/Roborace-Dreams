@@ -1,0 +1,12 @@
+Description:
+Only partialy sucessful mapping to NR2002 skins.
+
+Install:
+Create cg-nascar-rwd-vnr2002 directory in tyour TORCS-car-directory and copy the files into it.
+
+Credits:
+
+wheel- and driver-textures: Team LightSpeed! NR 2003 Template
+driver model: from trb1-car
+body: see readme.txt
+skins taken from nnracing.com
